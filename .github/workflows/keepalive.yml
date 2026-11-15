@@ -1,10 +1,11 @@
+
 # 月度空提交，降低 schedule 因仓库长期无活动被停用的风险。
 name: Keepalive
 
 on:
   schedule:
     - cron: "0 0 1 * *"
-    workflow_dispatch:
+  workflow_dispatch:
 
 permissions:
   contents: write
